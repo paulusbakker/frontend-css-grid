@@ -21,6 +21,19 @@
             "footer";
 }
 
+@media only screen and (min-width: 992px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 174px 100px auto 50px;
+        grid-template-areas:
+        "little-header big-header big-header"
+        "left-content big-header big-header"
+        "left-content middle-content aside-right"
+        "left-content middle-content empty-space"
+        "footer footer footer";
+    }
+}
+
 #little-header, #big-header, #left-content, #middle-content, #aside-right, #empty-space, #footer {
     background-color: #b93b46;
     border: 2px solid #922f37;
@@ -32,7 +45,6 @@
 
 #little-header {
     grid-area: little-header;
-
 }
 
 #big-header {
@@ -58,17 +70,4 @@
 
 #footer {
     grid-area: footer;
-}
-
-@media only screen and (min-width: 992px) {
-    .container {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 50px 174px 100px auto 50px;
-        grid-template-areas:
-        "little-header big-header big-header"
-        "left-content big-header big-header"
-        "left-content middle-content aside-right"
-        "left-content middle-content empty-space"
-        "footer footer footer";
-    }
 }
