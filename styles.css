@@ -1,1 +1,45 @@
-/*Maak hier jouw CSS!*/
+.container {
+    background-color: #d7d0c8;
+    padding: 16px;
+    color: white;
+    background-color: darkred;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 190px 100px auto 50px;
+    grid-template-areas:
+            "little-header big-header big-header"
+            "left-content big-header big-header"
+            "left-content middle-content aside-right"
+            "left-content middle-content empty-space"
+            "footer footer footer";
+}
+
+#little-header {
+    grid-area: little-header;
+}
+
+#big-header {
+    grid-area: big-header;
+}
+
+#left-content {
+    grid-area: left-content;
+}
+
+#middle-content {
+    grid-area: middle-content;
+}
+
+#aside-right {
+    grid-area: aside-right;
+}
+
+#empty-space {
+    grid-area: empty-space;
+    background-color: white;
+}
+
+#footer {
+    grid-area: footer;
+}
