@@ -17,7 +17,7 @@
             "left-content"
             "middle-content"
             "aside-right"
-            "empty-space"
+            "none"
             "footer";
 }
 
@@ -29,12 +29,12 @@
         "little-header big-header big-header"
         "left-content big-header big-header"
         "left-content middle-content aside-right"
-        "left-content middle-content empty-space"
+        "left-content middle-content none"
         "footer footer footer";
     }
 }
 
-#little-header, #big-header, #left-content, #middle-content, #aside-right, #empty-space, #footer {
+#little-header, #big-header, #left-content, #middle-content, #aside-right, #footer {
     background-color: #b93b46;
     border: 2px solid #922f37;
     display: flex;
@@ -61,11 +61,6 @@
 
 #aside-right {
     grid-area: aside-right;
-}
-
-#empty-space {
-    grid-area: empty-space;
-    visibility: hidden;
 }
 
 #footer {
